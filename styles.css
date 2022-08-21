@@ -80,12 +80,13 @@ p{
 }
 .header a{
     background-color: hsl(322, 100%, 66%);
-    padding: 15px 70px;
+    padding: 15px 60px;
     border-radius: 25px;
     color: white;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 4vw;
     transition: 0.3s;
+    display: block;
     
 }
 header a:hover{
@@ -205,18 +206,24 @@ footer{
 }
 .modal a{
     background-color: hsl(322, 100%, 66%);
-    padding: 10px 60px;
+    padding: 10px 40px;
     border-radius: 25px;
     color: white;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 4vw;
     transition: 0.3s;
+    display: block;
+    
 }
 .modal a:hover{
     background-color: hsl(192, 100%, 9%);
 }
 .modal a:active{
     opacity: 0.2;
+}
+.modal div{
+    display: flex;
+    justify-content: center;
 }
 
 
