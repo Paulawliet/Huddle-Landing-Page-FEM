@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+/* reset */
+* {
+    box-sizing: border-box;
+}
+body h1,h2,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style: none;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+h1,h2,p{
+    text-align: center;
+}
+h1,h2{
+    color: hsl(192, 100%, 9%);
+}
+p{
+    color: hsl(208, 11%, 55%);
+}
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+    
+}
+/* nav bar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 2rem 1rem;
+}
+
+.nav-bar a{
+    font-size: 0.7em;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.nav-bar a:hover{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+.nav-bar a:active{
+    opacity: 0.5;
+}
+.nav-bar img{
+    width: 30%;
+}
+/* header */
+.header{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+.header h1{
+    font-size: 1.8em;
+}
+.header p{
+    color: hsl(192, 100%, 9%);
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 0 1.4rem;
+}
+.header a{
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px 70px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: 0.3s;
+    
+}
+header a:hover{
+    background-color: hsl(192, 100%, 9%);
+}
+header a:active{
+    opacity: 0.2;
+}
+.header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+header img{
+    padding: 0 1rem;
+}
+
+/* main section */
+main{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 8rem;
+    margin-bottom: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+main section:last-child{
+    margin-bottom: 3rem;
+}
+section img{
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+section h2{
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+}
+section p{
+    font-size: 1em;
+    padding: 0 2.5rem;
+}
+
+
+
+
+/* footer */
+footer{
+    position: relative;
+    background-color: hsl(192, 100%, 9%);
+}
+.footer-header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+}
+.footer-header-flex{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.footer-header-flex p{
+    text-align: left;
+    color: white; 
+}
+.footer-header-pic,.footer-header-flex img{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(112%) contrast(101%);
+}
+.footer-header-flex img{
+    width: 5%;
+}
+.footer-header-pic{
+    width: 50%;
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+.footer ul li{
+    color: white;
+    font-size: 1.2em;
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0 1.5rem 0;
+}
+.footer-socials img{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(112%) contrast(101%);
+    width: 10%;
+}
+.footer-copyright{
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 5rem;
+}
+.modal{
+    text-align: center;
+    left: 1rem;
+    right: 1rem;
+    top: -5rem;
+    bottom: 55rem;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    position: absolute;
+    background-color: white;
+}
+.modal h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+}
+.modal a{
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 60px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+.modal a:hover{
+    background-color: hsl(192, 100%, 9%);
+}
+.modal a:active{
+    opacity: 0.2;
+}
+
+
+
+
+
