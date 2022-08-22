@@ -225,8 +225,236 @@ footer{
     display: flex;
     justify-content: center;
 }
+/* fpor tablet sized/small laptops */
+@media screen and (min-width:860px) {
+    .nav-bar a{
+        padding: 10px 40px;
+    }
+    .header a{
+        font-size: 13px;
+        padding: 15px 80px;
+    }
+    .modal h2{
+        font-size: 25px;
+    }
+    .modal a{
+        font-size: 13px;
+        padding: 15px 80px;
+    }
+    .modal{
+        height: 20vh;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-header-container{
+        margin: 0;
+        margin-top: 8rem;
+    }
+    .footer ul{
+        margin: 0;
+        margin-top: 8rem;
+        display: grid;
+        align-items: center;
+        
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-social{
+        margin: 0;
+    }
+    .footer-copyright{
+        margin: auto auto;
+    }
+}
 
+/* for desktop */
+@media screen and (min-width:1440px){
+    .nav-bar{
+        padding: 2rem 3rem;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .nav-bar img{
+        width: 10%;
+    }
+    .nav-bar a{
+        padding: 10px 40px;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        padding: 0 3rem;
+    }
+    .header h1,p,div{
+        grid-column: 1/6;
+        
+    }
+    .header h1{
+        grid-row: 5;
+        text-align: left;
+        padding-right: 14rem;
+    }
+    .header p{
+        grid-row: 6;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        padding-right: 6rem;
+        
+    }
+    .header div{
+        grid-row:7;
+        margin: 0;
+        justify-content: start;
+    }
+    .header img{
+        grid-column: span 7/13;
+        grid-row: 1/span 12;
+        margin: 0;
+        padding: 0;
 
-
-
-
+    }
+    .header a{
+        
+        font-size: 13px;
+        padding: 15px 60px;
+    }
+    .main-content{
+        padding: 0 10rem;
+    }
+    .main-content section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section1 img{
+        grid-column: 2/span 6;   
+    }
+    .section1 div{
+        grid-column: 1/2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-right: 12rem;
+    }
+    .section1 h2, p{
+        text-align: left;
+    }
+    .section1 p{
+        padding: 0;
+    }
+    .section2 div{
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-left: 4rem;
+    }
+    .section2 h2, p{
+        text-align: left;
+    }
+    .section2 p{
+        padding: 0;
+    }
+    .main-content img{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+    .section3 div{
+        grid-column: 1/2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-right: 12rem;
+    }
+    .section3 h2, p{
+        text-align: left;
+    }
+    .section3 p{
+        padding: 0;
+    }
+    .modal h2{
+        font-size: 25px;
+    }
+    .modal a{
+        font-size: 13px;
+        padding: 15px 80px;
+    }
+    .modal{
+        height: 20vh;
+        width: 40vw;
+        margin: 0 auto;
+    }
+    .footer{
+        display: flex;
+        align-items: flex-start;
+        padding: 8rem 6rem;
+        justify-content: center;
+    }
+    .footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 3.5rem;
+    }
+    .footer ul li{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .footer-socials{
+        margin: 0;
+        padding: 0;
+        margin-top: 3.5rem;
+        gap: 2rem;
+    }
+    .footer-socials img{
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .footer-socials img:hover{
+        filter: invert(72%) sepia(70%) saturate(6715%) hue-rotate(301deg) brightness(113%) contrast(101%);
+    }
+    .footer-socials img{
+        width: 5%
+    }
+    .footer ul li{
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    .footer ul li:hover{
+        text-decoration: underline;
+        color: #ff52bf;
+    }
+    .footer-header-container{
+        margin: 0;
+    }
+    .footer-header-flex img{
+        width: 2%;
+    }
+    .footer-header-flex p {
+        padding-right: 6rem;
+        margin: 0;
+    }
+    .footer-header-pic{
+        width: 30%;
+    }
+    .footer-copyright{
+        position: absolute;
+        bottom: 5rem;
+        right: 7.4rem;
+    }
+}
